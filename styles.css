@@ -1,0 +1,120 @@
+/* styles.css */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: white; 
+    font-size: 2.5em; 
+    margin-top: 20px; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative; /* Para posicionar la caja de información */
+    display: inline-block; /* Ajusta el título para que pueda ser contenedor */
+}
+
+h3 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.Starship {
+    height: 100vh;
+    background: url('./pixelcut-export.png') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+}
+
+.Rio {
+    height: 100vh;
+    background: url('./pixelcut-export2.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.casa {
+    height: 100vh;
+    background: url('./casa2-transformed.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.Bait {
+    height: 100vh;
+    background: url('./logo.jfif') no-repeat center center fixed;
+    background-size: cover;
+    z-index: -1;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative; /* Para posicionar la caja de información */
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(121, 121, 121, 0.5);
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000; /* Asegura que la barra esté encima de otros elementos */
+    backdrop-filter: blur(10px); 
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: inline-block;
+    font-size: 1rem;
+}
+
+.navbar a:hover {
+    background-color: #666;
+    color: #fff;
+}
+
+/* Estilos para la caja de información */
+.info-box {
+    display: none; /* Ocultar la caja de información por defecto */
+    position: fixed; /* Posicionar la caja de manera fija en la pantalla */
+    background-color: rgba(121, 121, 121, 0.5);
+    border: 1px solid #757575;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 200px; /* Ajusta el ancho de la caja según sea necesario */
+    z-index: 1000; /* Asegura que la caja esté encima de otros elementos */
+    top: 10px; /* Ajusta la posición vertical de la caja */
+    left: 10px; /* Ajusta la posición horizontal de la caja */
+    pointer-events: none; /* Evita que la caja de información interfiera con los eventos del mouse */
+    color:#535353;
+    backdrop-filter: blur(10px); 
+    font-size: small;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Mostrar la caja de información al pasar el mouse sobre el título */
+h1:hover .info-box {
+    display: block;
+    top: 70px; /* Ajusta la posición vertical de la caja según el tamaño del título */
+    opacity: 1;
+    transform: translateY(10px);
+}
