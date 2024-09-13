@@ -1,0 +1,125 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: white; 
+    font-size: 2.5em; 
+    margin-top: 20px; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    display: inline-block;
+}
+
+h3 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.starship, .rio, .casaMata, .matamoros, .mez     {
+    background-size: cover;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.starship {     
+    background: url('../Fotos/pixelcut-export.png') no-repeat center center fixed;
+    color: rgb(255, 255, 255);
+}
+
+.rio {
+    background: url('../Fotos/pixelcut-export2.jpeg') no-repeat center center fixed;
+}
+
+.casaMata {
+    background: url('../Fotos/casa2-transformed.jpeg') no-repeat center center fixed;
+}
+
+.matamoros {
+    background: url('../Fotos/logo.jfif') no-repeat center center fixed;
+}
+
+.mez {
+    background: url(../Fotos/pixelcut-export\ 4.jpeg)
+}
+
+
+.starship, .rio, .casaMata, .matamoros, .mez {
+    background-size: cover;
+}
+
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(121, 121, 121, 0.5);
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000;
+    backdrop-filter: blur(10px); 
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: inline-block;
+    font-size: 1rem;
+}
+
+.navbar a:hover {
+    background-color: #666;
+    color: #fff;
+}
+
+.text {
+    animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.btn-link {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: rgba(46, 46, 46, 0.6);
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 70px;
+    position: absolute;
+    z-index: 1001;
+    backdrop-filter: blur(10px); 
+    animation: fadeIn 1s ease-out;
+    
+
+}
+    
+
+.btn-link:hover {
+    background-color: rgba(190, 190, 190, 0.8);
+    color: rgb(49, 49, 49) ;
+}

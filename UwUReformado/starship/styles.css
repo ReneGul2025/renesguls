@@ -1,0 +1,76 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.back {
+    background: url('../Fotos/pixelcut-export.png') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo {
+    position: relative;
+    width: 1300px;
+    height: 500px; /* Increase height to give space for all content */
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end; /* Aligns content at the bottom */
+    padding: 20px; /* Internal spacing */
+    color: white;
+    font-family: "Kanit", sans-serif;
+    font-weight: 120;
+    font-style: normal;
+    backdrop-filter: blur(25px); 
+    background-color: rgba(65, 62, 62, 0.5);
+}
+
+
+
+.titulo-texto {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+.contenido {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    gap: 20px; /* Espacio entre el texto y el mapa */
+}
+
+.info {
+    text-align: left;
+    width: 60%;
+    font-size: 18px;
+    color: rgb(255, 237, 237);
+    text-shadow: rgba(0, 0, 0, 0.7);
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  font-size: 25px;
+}
+
+.mapa {
+    width: 40%;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
